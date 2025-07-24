@@ -1,0 +1,19 @@
+name: ${PROJECT}
+description: ${DESCRIPTION}
+runtime: yaml
+packages:
+  component-random: https://github.com/pulumi-pequod/component-random
+  stackmgmt: https://github.com/pulumi-pequod/component-stackmgmt@v2.1.0
+template:
+  description: Pulumi YAML project that creates a random pet name using a component that abstracts the random provider
+
+resources: 
+  # Create random pet name using a component (written in typescript) that leverages the random provider. 
+  pet:
+    type: random-abstracted:PetAbstracted
+    properties:
+      size: medium
+  stacksettings:
+    type: stackmgmt:StackSettings
+outputs: 
+  petName: pet.petName
