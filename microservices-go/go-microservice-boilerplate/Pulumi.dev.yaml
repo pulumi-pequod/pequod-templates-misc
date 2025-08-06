@@ -1,0 +1,3 @@
+environment:
+  - cloud-access/aws-access
+  - platform-team/stackmgmt
