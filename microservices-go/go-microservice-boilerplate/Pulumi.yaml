@@ -2,7 +2,7 @@ name: ${PROJECT}
 description: ${DESCRIPTION}
 runtime: yaml
 packages:
-  component-microservice: https://github.com/pulumi-pequod/component-microservice@v1.0.1
+  component-microservice: https://github.com/pulumi-pequod/component-microservice@v1.0.2
   stackmgmt: https://github.com/pulumi-pequod/component-stackmgmt@v2.1.0
 template:
     description: A template for deploying a Go microservice on AWS ECS with auto-scaling capabilities.
