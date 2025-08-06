@@ -7,6 +7,8 @@ packages:
 template:
     description: A template for deploying a Go microservice on AWS ECS with auto-scaling capabilities.
 resources:
+  stacksettings:
+    type: stackmgmt:StackSettings
   microserviceComponent:
     type: component-microservice:MicroserviceComponent
     properties:
