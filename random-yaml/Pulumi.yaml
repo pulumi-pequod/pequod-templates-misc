@@ -3,7 +3,7 @@ description: ${DESCRIPTION}
 runtime: yaml
 packages:
   component-random: https://github.com/pulumi-pequod/component-random
-  stackmgmt: https://github.com/pulumi-pequod/component-stackmgmt@v2.1.0
+  stackmgmt: https://github.com/pulumi-pequod/component-stackmgmt
 template:
   description: Pulumi YAML project that creates a random pet name using a component that abstracts the random provider
 
