@@ -1,3 +1,4 @@
 environment:
   # Config used for the stack settings.
   - platform-team/stackmgmt
+  - shared-infra/k8s-cluster
