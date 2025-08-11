@@ -13,7 +13,7 @@ resources:
     type: random-abstracted:PetAbstracted
     properties:
       size: medium
-  # stacksettings:
-  #   type: stackmgmt:StackSettings
+  stacksettings:
+    type: stackmgmt:StackSettings
 outputs: 
   petName: pet.petName
