@@ -6,13 +6,17 @@ packages:
   stackmgmt: https://github.com/pulumi-pequod/component-stackmgmt
 template:
   description: Pulumi YAML project that creates a random pet name using a component that abstracts the random provider
+  config:
+    size:
+      description: Size, one of "small", "medium", "large", or "xlarge" that defines the length of the pet name.
+      default: medium
 
 resources: 
   # Create random pet name using a component (written in typescript) that leverages the random provider. 
   pet:
     type: random-abstracted:PetAbstracted
     properties:
-      size: medium
+      size: ${size}
   stacksettings:
     type: stackmgmt:StackSettings
 outputs: 
