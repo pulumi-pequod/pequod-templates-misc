@@ -21,3 +21,7 @@ resources:
     type: stackmgmt:StackSettings
 outputs: 
   petName: pet.petName
+
+config:
+  size:
+    type: string
