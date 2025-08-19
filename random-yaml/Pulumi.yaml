@@ -20,7 +20,7 @@ resources:
   stacksettings:
     type: stackmgmt:StackSettings
 outputs: 
-  petName: pet.petName
+  petName: ${pet.petName}
 
 config:
   size:
